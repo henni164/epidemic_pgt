@@ -1,0 +1,16 @@
+##gff-version 3
+chr17_hap01	.	mRNA	2986831	2986457	0	-	0	Name=AvrSr33-01
+chr17_hap01	.	mRNA	2988454	2988080	0	-	0	Name=AvrSr33-05
+chr17_hap02	.	mRNA	2805588	2805214	0	-	0	Name=AvrSr33-01
+chr17_hap02	.	mRNA	2807208	2806834	0	-	0	Name=AvrSr33-06
+chr17_hap04	.	mRNA	3083679	3083305	0	-	0	Name=AvrSr33-03
+chr17_hap05	.	mRNA	2872083	2871709	0	-	0	Name=AvrSr33-01
+chr17_hap05	.	mRNA	2874435	2874061	0	-	0	Name=AvrSr33-07
+chr17_hap06	.	mRNA	2932103	2931729	0	-	0	Name=AvrSr33-02
+chr17_hap06	.	mRNA	2933723	2933349	0	-	0	Name=AvrSr33-08
+chr17_hap07	.	mRNA	2941700	2941326	0	-	0	Name=AvrSr33-04
+chr17_hap03	.	mRNA	3288827	3289165	0	-	0	Name=AvrSr33-pseudo
+chr17_hap01	.	mRNA	2988885	2989224	0	-	0	Name=AvrSr33-pseudo
+chr17_hap02	.	mRNA	2807639	2807978	0	-	0	Name=AvrSr33-pseudo
+chr17_hap05	.	mRNA	2874853	2875193	0	-	0	Name=AvrSr33-pseudo
+chr17_hap06	.	mRNA	2934154	2934491	0	-	0	Name=AvrSr33-pseudo
