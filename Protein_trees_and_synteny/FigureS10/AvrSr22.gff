@@ -1,0 +1,8 @@
+##gff-version 3
+chr16_hap01	.	mRNA	2210171	2210464	0	-	0	Name=AvrSr22-01
+chr16_hap02	.	mRNA	2168791	2168498	0	-	0	Name=AvrSr22-02
+chr16_hap03	.	mRNA	2083104	2083397	0	-	0	Name=AvrSr22-01
+chr16_hap04	.	mRNA	2262879	2263172	0	-	0	Name=AvrSr22-02
+chr16_hap05	.	mRNA	2170276	2170569	0	-	0	Name=AvrSr22-03
+chr16_hap06	.	mRNA	2314489	2314782	0	-	0	Name=AvrSr22-02
+chr16_hap07	.	mRNA	2088377	2088670	0	-	0	Name=AvrSr22-03

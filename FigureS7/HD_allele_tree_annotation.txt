@@ -1,0 +1,269 @@
+DATASET_DOMAINS
+#Protein domain datasets are visualized as schematic representations of proteins, with a protein backbone and various shapes depicting the locations of individual domains
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL,bWbE
+
+#dataset color (can be changed later)
+COLOR,#ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#dataset scale: you can simply set the values where the scale will be drawn
+#DATASET_SCALE,100,200,1000
+#or you can specify value, label, color, width, style and label size factor for each scale line (dash separated, format: VALUE-LABEL-COLOR-WIDTH-DASHED-LABEL_SCALE_FACTOR))
+#DATASET_SCALE,100-amino acid 100-#0000ff-5-1-1,200-line at aa200-#ff0000-1-0-2,1000-3rd aa line-#00ff00-5-1-1
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#To order legend entries horizontally instead of vertically, set LEGEND_HORIZONTAL to 1
+#Shape should be a number between 1 and 6, or any protein domain shape definition (RE, HH, HV...).
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+#LEGEND_TITLE,Dataset legend
+#LEGEND_POSITION_X,100
+#LEGEND_POSITION_Y,100
+#LEGEND_HORIZONTAL,0
+#LEGEND_SHAPES,1,2,3
+#LEGEND_COLORS,#ff0000,#00ff00,#0000ff
+#LEGEND_LABELS,value1,value2,value3
+#LEGEND_SHAPE_SCALES,1,1,0.5
+
+#maximum width
+WIDTH,70
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+SHOW_INTERNAL,0
+
+#show dashed lines between leaf labels and the dataset
+#DASHED_LINES,1
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+MARGIN,-25
+
+#protein height factor; Default height of each domain will be slightly less than the available space between leaves, but you can set a multiplication factor here to increase/decrease it (values from 0 to 1 will decrease it, values above 1 will increase it)
+HEIGHT_FACTOR,2.2
+
+#proteins are aligned to the node lines by default. Using BAR_SHIFT, you can move them all up/down by a fixed amount
+#BAR_SHIFT,0
+
+#display or hide the text labels for each domain
+SHOW_DOMAIN_LABELS,1
+
+#set the size factor for the text labels
+LABEL_SIZE_FACTOR,2.4
+
+#with LABELS_ON_TOP set to 0, label text which does not fit into the shape will be hidden
+#LABELS_ON_TOP,0
+
+#color of the background rectangle representing the protein amino acid backbone
+#BACKBONE_COLOR,#aaaaaa
+
+#height of the background rectangle representing the protein amino acid backbone (in pixels)
+BACKBONE_HEIGHT,0
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the domain shapes
+BORDER_WIDTH,2
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR,#0000ff
+
+
+#domains can be filled with solid color, or a gradient
+#GRADIENT_FILL,0
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+DATA
+#Each node can have one protein definition assigned, with total protein length defined in field 2, followed by an unlimited number of domain definitions
+#Each domain definition consists of 5 parts, separated with vertical lines:
+#SHAPE|START|END|COLOR|LABEL
+
+#there are 13 different possible shapes:
+#RE  rectangle
+#HH  horizontal hexagon
+#HV  vertical hexagon
+#EL  ellipse
+#DI  rhombus (diamond)
+#TR  right pointing triangle
+#TL  left pointing triangle
+#PL  left pointing pentagram
+#PR  right pointing pentagram
+#PU  up pointing pentagram
+#PD  down pointing pentagram
+#OC  octagon
+#GP  rectangle (gap; black filled rectangle with 1/3 normal height)
+
+
+00MN99C,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+00MO63C,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+01MN84-A-1-2,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|
+01SD80A,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+01TUR17A,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+01TUR34A,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+04KEN15604,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+04MN74-1,3,RE|1|2|#ffc9c9|,RE|2|3|#ffe3a9|
+06KEN19V3,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+07KEN24-4,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+09ETH8-3,3,RE|1|2|#92ffe5|,RE|2|3|#FFFFFF|
+09ID073-2,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+12ISR2083,3,RE|1|2|#ff8bd8|,RE|2|3|#FFFFFF|
+13ETH18-1,3,RE|1|2|#ff8bd8|,RE|2|3|#FFFFFF|
+13ETH22-2,3,RE|1|2|#ff8bd8|,RE|2|3|#FFFFFF|
+13ETH23-1,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+13GER16-1,3,RE|1|2|#ff8bd8|,RE|2|3|#FFFFFF|
+13GER17-2,3,RE|2|3|#FFFFFF|,RE|1|2|#ff8bd8|
+14KEN58-1,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+59KS19,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+61PA80A,3,RE|1|2|#ffc9c9|,RE|2|3|#ffe3a9|
+69KS170,3,RE|1|2|#ffc9c9|,RE|2|3|#ffe3a9|
+71MN603-2,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+72ETH11-4,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+72ETH9-3,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+72WA109A,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|
+72WA1163A,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|
+73WA399C,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+74MN1409,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|
+75-36-700-3-7a,3,RE|1|2|#ffc9c9|,RE|2|3|#ffe3a9|
+75LA4C,3,RE|1|2|#ffc9c9|,RE|2|3|#ffe3a9|
+75WA1506,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+75WA1781C,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+76WA1295A,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+76WA1374A,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+76WA1374B,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+76WA1433B,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+76WA1468A,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+76WI142A,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|
+77MAR15,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|
+78-21-BB463,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+81BRA38A,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|
+83ETH13-1,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+83SYR2-2,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+83TUR1-3,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+84KEN654B,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+84KEN8B,3,RE|1|2|#92ffe5|,RE|2|3|#FFFFFF|
+84MAR10A,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+86HUN1041A,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+86MAR179B,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+87ETH3008D,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+87KEN3018-1,3,RE|1|2|#92ffe5|,RE|2|3|#FFFFFF|
+87MDG1054A,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+95MN1080,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+96MN83A-3,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+99EGY5B,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+99EGY6A,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|
+99KS76A-1,3,RE|1|2|#ffc9c9|,RE|2|3|#ffe3a9|
+DE-01,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+DE-02,3,RE|1|2|#ff8bd8|,RE|2|3|#FFFFFF|
+DE-03,3,RE|1|2|#ff8bd8|,RE|2|3|#FFFFFF|
+DE-04,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+DE-05,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+DE-06,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+DE-07,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+ETH2013-1,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+H-01,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+IR-01,3,RE|1|2|#92ffe5|,RE|2|3|#FFFFFF|
+IR-02,3,RE|2|3|#9793ff|,RE|1|2|#FFFFFF|
+IR-04,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IR-05,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IR-06,3,RE|1|2|#ff8bd8|,RE|2|3|#9793ff|
+ITA2018-1,3,RE|2|3|#dea6ff|,RE|1|2|#ff8bd8|
+M-01,3,RE|1|2|#ffc9c9|,RE|2|3|#ffe3a9|
+M-02,3,RE|1|2|#ffc9c9|,RE|2|3|#ffe3a9|
+Pgt-194,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+Pgt21-0,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+Pgt279,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+Pgt326,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+Pgt34-2-12,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+Pgt34-2-12-13,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+Pgt-55,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+Pgt-59,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+Pgt-60,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+Pgt-61,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+Pgt632,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+Pgt-98,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+PK-01,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+PK-02,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+PK-04,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+Ug99,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+US-01,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+CZ-01,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+CZ-02,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+CZ-03,3,RE|1|2|#ffc9c9|,RE|2|3|#FFFFFF|
+DK-01,3,RE|1|2|#ff8bd8|,RE|2|3|#FFFFFF|
+DK-02,3,RE|1|2|#ff8bd8|,RE|2|3|#FFFFFF|
+ET-01,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+ET-02,3,RE|1|2|#92ffe5|,RE|2|3|#dcff8f|
+ET-03,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+ET-04,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+FR-01,3,RE|2|3|#dea6ff|,RE|1|2|#ff8bd8|
+FR-02,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+FR-03,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+FR-04,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+FR-05,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+FR-06,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+FR-07,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+FR-08,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+FR-09,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+FR-10,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-01,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-02,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-03,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-04,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-05,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-06,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-07,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-08,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-09,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-10,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-11,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IE-12,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+IS-01,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+IS-02,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+IS-03,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+IT-01,3,RE|2|3|#dea6ff|,RE|1|2|#ff8bd8|
+IT-02,3,RE|2|3|#dea6ff|,RE|1|2|#ff8bd8|
+IT-03,3,RE|2|3|#dea6ff|,RE|1|2|#ff8bd8|
+IT-04,3,RE|2|3|#dea6ff|,RE|1|2|#ff8bd8|
+IT-05,3,RE|1|2|#FFFFFF|,RE|2|3|#9793ff|
+SA-01,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+SA-02,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+SA-03,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+SA-04,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+SA-05,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+SA-06,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+SA-07,3,RE|1|2|#ffc9c9|,RE|2|3|#dcff8f|
+SE-01,3,RE|1|2|#FFFFFF|,RE|2|3|#9793ff|
+UK-01,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+UK-02,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+UK-03,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+UK-04,3,RE|1|2|#7dd9ff|,RE|2|3|#9793ff|
+UK-05,3,RE|1|2|#FFFFFF|,RE|2|3|#FFFFFF|
+UR-01,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|
+UR-02,3,RE|2|3|#ffe3a9|,RE|1|2|#FFFFFF|

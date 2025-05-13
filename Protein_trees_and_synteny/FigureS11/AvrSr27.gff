@@ -1,0 +1,13 @@
+##gff-version 3
+chr2_hap01	.	mRNA	720632	721066	0	+	0	Name=AvrSr27-03
+chr2_hap02	.	mRNA	667142	667576	0	+	0	Name=AvrSr27-01
+chr2_hap02	.	mRNA	673653	674087	0	+	0	Name=AvrSr27-02
+chr2_hap03	.	mRNA	628882	629316	0	+	0	Name=AvrSr27-04
+chr2_hap03	.	mRNA	654651	655085	0	+	0	Name=AvrSr27-02
+chr2_hap04	.	mRNA	734094	733660	0	-	0	Name=AvrSr27-05
+chr2_hap04	.	mRNA	722083	722517	0	+	0	Name=AvrSr27-06
+chr2_hap05	.	mRNA	911467	911901	0	+	0	Name=AvrSr27-07
+chr2_hap06	.	mRNA	686977	687411	0	+	0	Name=AvrSr27-06
+chr2_hap06	.	mRNA	749508	749074	0	-	0	Name=AvrSr27-08
+chr2_hap07	.	mRNA	684869	685303	0	+	0	Name=AvrSr27-09
+chr2_hap07	.	mRNA	715118	715552	0	-	0	Name=AvrSr27-10

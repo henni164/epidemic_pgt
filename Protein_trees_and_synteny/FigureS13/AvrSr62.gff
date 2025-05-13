@@ -1,0 +1,26 @@
+##gff-version 3
+chr5_hap01	.	mRNA	4181444	4182329	0	+	0	Name=AvrSr62-01
+chr5_hap01	.	mRNA	4185772	4186682	0	+	0	Name=AvrSr62-pseudo
+chr5_hap01	.	mRNA	4190083	4190958	0	+	0	Name=AvrSr62-02
+chr5_hap01	.	mRNA	4248081	4248987	0	+	0	Name=AvrSr62-03
+chr5_hap01	.	mRNA	4251591	4252467	0	+	0	Name=AvrSr62-04
+chr5_hap02	.	mRNA	5894310	5895199	0	+	0	Name=AvrSr62-05
+chr5_hap02	.	mRNA	5913497	5914398	0	+	0	Name=AvrSr62-06
+chr5_hap02	.	mRNA	5917931	5918813	0	+	0	Name=AvrSr62-07
+chr5_hap03	.	mRNA	4363833	4364722	0	+	0	Name=AvrSr62-05
+chr5_hap03	.	mRNA	4382929	4383830	0	+	0	Name=AvrSr62-06
+chr5_hap03	.	mRNA	4387370	4388252	0	+	0	Name=AvrSr62-08
+chr5_hap04	.	mRNA	4467469	4468358	0	+	0	Name=AvrSr62-05
+chr5_hap04	.	mRNA	4486695	4487596	0	+	0	Name=AvrSr62-06
+chr5_hap04	.	mRNA	4491139	4492021	0	+	0	Name=AvrSr62-07
+chr5_hap05	.	mRNA	4073970	4074855	0	+	0	Name=AvrSr62-01
+chr5_hap05	.	mRNA	4078313	4079223	0	+	0	Name=AvrSr62-09
+chr5_hap05	.	mRNA	4082684	4083559	0	+	0	Name=AvrSr62-02
+chr5_hap05	.	mRNA	4107071	4107977	0	+	0	Name=AvrSr62-10
+chr5_hap05	.	mRNA	4110581	4111457	0	+	0	Name=AvrSr62-04
+chr5_hap06	.	mRNA	4527335	4528236	0	+	0	Name=AvrSr62-06
+chr5_hap06	.	mRNA	4531769	4532651	0	+	0	Name=AvrSr62-07
+chr5_hap06	.	mRNA	4506638	4507529	0	+	0	Name=AvrSr62-11
+chr5_hap07	.	mRNA	4052574	4053475	0	+	0	Name=AvrSr62-06
+chr5_hap07	.	mRNA	4057008	4057890	0	+	0	Name=AvrSr62-07
+chr5_hap07	.	mRNA	4034451	4035342	0	+	0	Name=AvrSr62-11

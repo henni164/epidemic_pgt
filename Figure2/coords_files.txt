@@ -1,0 +1,6 @@
+hap02_vs_hap01.filtered.coords
+hap01_vs_hap03.filtered.coords
+hap03_vs_hap04.filtered.coords
+hap04_vs_hap05.filtered.coords
+hap05_vs_hap06.filtered.coords
+hap06_vs_hap07.filtered.coords

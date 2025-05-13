@@ -1,0 +1,7 @@
+hap02.fasta	hap02	lw:2;lc:#F5B184
+hap01.fasta	hap01	lw:2;lc:#BDD7EE
+hap03.fasta	hap03	lw:2;lc:#6FAE47
+hap04.fasta	hap04	lw:2;lc:#F08984
+hap05.fasta	hap05	lw:2;lc:#AA9DCC
+hap06.fasta	hap06	lw:2;lc:#EFB0D0
+hap07.fasta	hap07	lw:2;lc:#D0E1A2

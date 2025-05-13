@@ -1,0 +1,5 @@
+##gff-version 3
+chr1_hap01	.	mRNA	2645985	2646401	0	+	0	Name=AvrSr13-01
+chr1_hap03	.	mRNA	2742872	2743288	0	+	0	Name=AvrSr13-01
+chr1_hap04	.	mRNA	3057845	3058261	0	+	0	Name=AvrSr13-02
+chr1_hap05	.	mRNA	2908393	2908809	0	+	0	Name=AvrSr13-03
