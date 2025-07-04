@@ -1,5 +1,3 @@
-hapF
-hapE
 hap07
 hap06
 hap05

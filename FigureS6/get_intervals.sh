@@ -16,7 +16,7 @@ for f in ${LIST2[@]}; do
 done
 
 LIST=($(cut -f 1 haplist_extend.txt))
-index=8
+index=6
 for g in ${LIST[@]}; do
 	echo ${index}
 	if [ ${g} == "hap01" ]; then

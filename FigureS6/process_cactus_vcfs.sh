@@ -9,7 +9,7 @@ rm -f all_varpos_index.txt
 
 LIST=($(cut -f 1 allhaps.txt))
 
-#gzip -d *.vcf.gz
+gzip -d *.vcf.gz
 
 for f in ${LIST[@]}; do sed -i 's/#CHROM/CHROM/g' ${f}.vcf; done
 

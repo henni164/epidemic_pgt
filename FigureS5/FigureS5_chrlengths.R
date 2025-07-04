@@ -36,5 +36,5 @@ chr_lengths_plot <- ggplot(chr_melted) +
 
 chr_lengths_plot
 
-ggsave("Pgt_chrlengths.tiff", 
+ggsave("FigureS5.tiff", 
        chr_lengths_plot, device = "tiff", height = 5, width = 5, units = "in", dpi = 600)

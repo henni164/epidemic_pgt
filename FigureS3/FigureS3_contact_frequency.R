@@ -14,7 +14,6 @@ contacts_plot <- ggplot(pgt_contacts) +
   geom_col(aes(x = chr, y = perc, group = binhap, fill = binhap), position = "stack", color = "black", linewidth = 0.2) + 
   scale_fill_manual(values = c("#F08984","#AA9DCC","#EFB0D0","#D0E1A2"), labels = c("hap04","hap05","hap06","hap07"), name = NULL) + 
   scale_y_continuous(expand = c(0,0.5)) +
-  #geom_label(data = text, aes(label = text), x = "2", y = 90, color = "black", fill = "white", size = 2.5, hjust = 0.5, vjust = 0.5) +
   facet_grid(isolate + chrhap ~ type, scales = "free_x", drop = TRUE) + 
   labs(x = "Chromosome", y = "Hi-C contacts (%)") +
   theme(panel.background = element_rect(color = "black", fill = "white"),
@@ -27,9 +26,8 @@ contacts_plot <- ggplot(pgt_contacts) +
         axis.text = element_text(size = 8, color = "black"),
         axis.title = element_text(size = 8, color = "black"),
         legend.text = element_text(size = 8, color = "black"),
-        #legend.margin = margin(0,0,0,0),
         legend.position = "none",
         panel.spacing.y = unit(1, "lines"))
 
-ggsave("Figure_S2.tiff",
+ggsave("FigureS3.tiff",
        contacts_plot, device = "tiff", dpi = 600, width = 6.5, height = 5.5, units = "in")

@@ -5,7 +5,7 @@
 #SBATCH --time=2:00:00
 #SBATCH --mem=50GB
 
-#to submit: sbatch -a 0-8 --export INPUTLIST="./allhaps.txt" prep_intervals.sh
+#to submit: sbatch -a 0-6 --export INPUTLIST="./allhaps.txt" prep_intervals.sh
 
 module load R
 
